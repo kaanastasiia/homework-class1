@@ -1,0 +1,4 @@
+cat << EOF
+Time in UNIX format is $(date -d '11/02/2024 23:43:31' +"%s")
+Today is $(echo date +%d-%m-%Y | xargs date)
+EOF

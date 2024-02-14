@@ -1,0 +1,5 @@
+mkfifo pipe
+
+gzip -c < pipe > output.gz &
+
+cat file > pipe
